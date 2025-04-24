@@ -17,15 +17,33 @@ body{
     background-color: #111;
 }
 
+.calculator{
+    background-color: #333;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.calculator input {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid gray;
+    outline: none;
+    color: white;
+    padding: 8px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
 .keypad{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 8px;
 }
-button.secondary{
-    background-color: royalblue;
-    color: white;
+button:hover{
+    filter: brightness(70%);
 }
 button{
     border: 0;
@@ -34,4 +52,9 @@ button{
     font-size: 20px;
     font-weight: 600;
     cursor: pointer;
+    transition: all .3s ease;
+}
+button.secondary{
+    background-color: royalblue;
+    color: white;
 }
