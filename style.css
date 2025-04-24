@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    width: 100vw;
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #111;
+}
+
+.keypad{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+button.secondary{
+    background-color: royalblue;
+    color: white;
+}
+button{
+    border: 0;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
